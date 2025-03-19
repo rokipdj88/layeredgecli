@@ -41,8 +41,9 @@ echo -e "🛠️ Building and running risc0-merkle-service..."
 cd risc0-merkle-service
 cargo build && cargo run & echo -e "🚀 risc0-merkle-service is running!"
 
-echo -e "🖥️ Starting light-node server..."
+echo -e "🖥️ Starting light-node server in a screen session..."
 cd ..
-go build && ./light-node & echo -e "🟢 light-node server is running!"
+screen -dmS light-node bash -c 'go build && ./light-node' && echo -e "🟢 light-node server is running in a screen session!"
 
-echo -e "🎉 Setup complete! Both servers are running independently!"
+echo -e "🎉 Setup complete! Both servers are running independently in screen sessions!"
+
