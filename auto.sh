@@ -33,7 +33,7 @@ export ZK_PROVER_URL=http://127.0.0.1:3001
 export API_REQUEST_TIMEOUT=100
 export POINTS_API=http://127.0.0.1:8080
 echo -e "🔑 Please enter your private key: "
-read -s PRIVATE_KEY
+read PRIVATE_KEY
 echo -e "✅ Private key set!"
 export PRIVATE_KEY
 
