@@ -39,11 +39,10 @@ export PRIVATE_KEY
 
 echo -e "🛠️ Building and running risc0-merkle-service..."
 cd risc0-merkle-service
-cargo build && cargo run & echo -e "🚀 risc0-merkle-service is running!"
+cargo build && screen -dmS risc0-service cargo run && echo -e "🚀 risc0-merkle-service is running in a screen session!"
 
 echo -e "🖥️ Starting light-node server in a screen session..."
 cd ..
 screen -dmS light-node bash -c 'go build && ./light-node' && echo -e "🟢 light-node server is running in a screen session!"
 
 echo -e "🎉 Setup complete! Both servers are running independently in screen sessions!"
-
