@@ -20,6 +20,7 @@ echo -e "Join our Telegram channel: https://t.me/NTExhaust"
 sleep 5
 
 echo -e "🚀 Starting setup process..."
+rm -rf $HOME/light-node
 echo -e "🔗 Cloning repository..."
 git clone https://github.com/Layer-Edge/light-node.git && echo -e "✅ Repository cloned!"
 cd light-node
