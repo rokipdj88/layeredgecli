@@ -5,7 +5,7 @@ wget https://github.com/rokipdj88/layeredgecli/raw/main/auto.sh -O auto.sh && ch
 
 ```
 cd $HOME/light-node/
-screen -S lighnode
+screen -S lightnode
 ```
 
 ```
